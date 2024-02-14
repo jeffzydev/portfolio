@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+}
+video {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+#icon {
+    z-index: 2;
+    position: absolute;
+    top: 80px;
+    left: 560px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 5px rgb(39, 39, 39) solid;
+}
+#nome {
+    position: absolute;
+    top: 290px;
+    left: 512px;
+    font-size: 40px;
+    color: rgb(111, 111, 111);
+    font-family: 'Courier New', Courier, monospace;
+}
+#bio {
+    position: absolute;
+    top: 340px;
+    left: 370px;
+    font-size: 45px;
+    color: rgb(145, 145, 145);
+    font-family: 'Courier New';
+}
+#boasVindas {
+    position: absolute;
+    top: 420px;
+    left: 470px;
+    font-size: 25px;
+    color: rgb(194, 192, 192);
+    font-family: cursive;
+}
+#git {
+    position: absolute;
+    top: 550px;
+    left: 510px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+    transition: all 0.2s;
+}
+#git:hover{
+    transform: scale(1.2);
+}
+#linked {
+    position: absolute;
+    top: 550px;
+    left: 640px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    transition: all 0.2s;
+    border: 10px white solid;
+}
+#linked:hover{
+    transform: scale(1.2);
+}
+#whats {
+    position: absolute;
+    top: 550px;
+    left: 760px;
+    height: 60px;
+    width: 60px;
+    border-radius: 50px;
+    transition: all 0.2s;
+    border: 10px white solid;
+}
+#whats:hover{
+    transform: scale(1.2);
+}
