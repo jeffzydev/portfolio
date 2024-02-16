@@ -1,83 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Honk&family=Pacifico&family=Protest+Riot&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    text-align: center;
+    background-color: #000000;
+    height: 0;
+    position: relative; /* Adicione position: relative; */
+    z-index: 1; /* Ajuste o z-index para estar acima do vídeo */
+}
+
+nav li {
+    text-align: center;
+    display: inline-block;
+}
+ nav li a{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    color: rgb(124, 124, 124);
+    text-decoration: none;
+    padding: 15px;
+    font-size: 40px;
+}
+nav li a:hover{
+    color: white;
+}
+.dropdown-menu {
+    position: absolute;
+    box-shadow: 0 0 2px black;
+    display: none;
+}
+.dropdown-menu a{
+    display: block;
+    color: rgb(124, 124, 124);
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+#init{
+    font-size: 80px;
+}
 body {
     background-color: black;
     margin: 0;
     overflow: hidden;
 }
-video {
+#background-video {
     position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    width: auto;
+    height: auto;
     z-index: -1;
+}
+
+#icon-container {
+    text-align: center;
     width: 100%;
-    height: 100%;
 }
 #icon {
-    z-index: 2;
-    position: absolute;
-    top: 80px;
-    left: 560px;
+    margin-top: 150px;
+    display: inline-block;
     width: 200px;
     height: 200px;
     border-radius: 100px;
     border: 5px rgb(39, 39, 39) solid;
 }
 #nome {
-    position: absolute;
-    top: 290px;
-    left: 512px;
+    margin-top: 15px;
+    text-align: center;
     font-size: 40px;
     color: rgb(111, 111, 111);
-    font-family: 'Courier New', Courier, monospace;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 #bio {
-    position: absolute;
-    top: 340px;
-    left: 370px;
+    text-align: center;
     font-size: 45px;
     color: rgb(145, 145, 145);
-    font-family: 'Courier New';
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
 }
-#boasVindas {
-    position: absolute;
-    top: 420px;
-    left: 470px;
-    font-size: 25px;
-    color: rgb(194, 192, 192);
-    font-family: cursive;
+#icones {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
 }
-#git {
-    position: absolute;
-    top: 550px;
-    left: 510px;
+#icones img {
     height: 80px;
     width: 80px;
     border-radius: 50px;
     transition: all 0.2s;
+    margin-right: 50px;
+    margin-left: 50px;
 }
-#git:hover{
+#icones img:hover {
     transform: scale(1.2);
 }
-#linked {
-    position: absolute;
-    top: 550px;
-    left: 640px;
-    height: 60px;
-    width: 60px;
-    border-radius: 50px;
-    transition: all 0.2s;
+#linked{
     border: 10px white solid;
-}
-#linked:hover{
-    transform: scale(1.2);
 }
 #whats {
-    position: absolute;
-    top: 550px;
-    left: 760px;
-    height: 60px;
-    width: 60px;
-    border-radius: 50px;
-    transition: all 0.2s;
     border: 10px white solid;
 }
-#whats:hover{
-    transform: scale(1.2);
+#icones img:last-child {
+    margin-right: 0;
 }
